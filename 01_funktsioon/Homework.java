@@ -15,12 +15,12 @@ public class Homework {
         int romanNumeralsCounterInList = 0; //mitu rooma numbri läksid sisse
         char[] tempArr = new char[20];
         for (int arrPosition = 0; arrPosition < arabicNumbers.length; arrPosition++) {
-            System.out.printf("At the moment array positions are %s %n",arrPosition);
+            System.out.printf("At the moment array positions are %s %n", arrPosition);
             if (number == arabicNumbers[arrPosition]) {
                 return romanNumerals[arrPosition] + "";
             } else if (tempNumber < arabicNumbers[arrPosition]) {
                 int loopCounter = 0;
-                while (tempNumber > 0 || loopCounter  <=3 ) {
+                while (tempNumber > 0 || loopCounter <= 3) {
                     if (tempNumber == 0) {
                         StringBuilder answer = new StringBuilder();
                         for (char numeral : tempArr) {
@@ -28,7 +28,7 @@ public class Homework {
                         }
                         return answer.toString();
                     }
-                    System.out.printf("Before the loop tempNumber is %s %n",tempNumber);
+                    System.out.printf("Before the loop tempNumber is %s %n", tempNumber);
                     if (tempNumber > 0) {
                         while ((tempNumber - arabicNumbers[arrPosition - 1]) < 0) {
                             arrPosition -= 1;
@@ -39,24 +39,32 @@ public class Homework {
                         tempArr[romanNumeralsCounterInList] = romanNumerals[arrPosition - 1];
                         romanNumeralsCounterInList += 1;
                         tempNumber -= arabicNumbers[arrPosition - 1];
-                    }else {
+                    } else {
                         tempArr[romanNumeralsCounterInList] = romanNumerals[arrPosition];
                         romanNumeralsCounterInList += 1;
                         tempNumber -= arabicNumbers[arrPosition];
                     }
 
-                    System.out.printf("After the loop tempNumber is %s %n",tempNumber);
+                    System.out.printf("After the loop tempNumber is %s %n", tempNumber);
                     loopCounter += 1;
-                    System.out.printf("At the moment while is %s loops long %n",loopCounter);
+                    System.out.printf("At the moment while is %s loops long %n", loopCounter);
                     System.out.println("At the moment tempArr contains: ");
-                    for (int i = 0; i < tempArr.length ; i++) {
+                    for (int i = 0; i < tempArr.length; i++) {
                         System.out.println(tempArr[i]);
                     }
                 }
-
+                if (loopCounter >= 3) {
+                    tempNumber = number;
+                    for (int arrPositionForNeg = 0; arrPositionForNeg < arabicNumbers.length; arrPositionForNeg++) {
+                        if (tempNumber < arabicNumbers[arrPositionForNeg]) {
+                            char tempBiggy = romanNumerals[arrPositionForNeg];
+                            return "Siin";
+                        }
+                    }
+                }
             }
         }
-        return "Ooops, there is nothing to return";
+        return  "Ooops, there is nothing to return";
     }
 
 }
