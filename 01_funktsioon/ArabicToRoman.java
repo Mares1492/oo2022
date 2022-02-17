@@ -1,5 +1,5 @@
 
-//Kodutöö | 2497 bug
+//Kodutöö |
 
 import java.util.Scanner;
 
