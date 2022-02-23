@@ -22,6 +22,7 @@ public class Friend {
 
     }
     public boolean phraseAnalyser(String userInput){
+        boolean containsBad = false;
         if (userInput.equalsIgnoreCase("STATUS")){
             statusCheck();
             return true;
@@ -51,20 +52,24 @@ public class Friend {
         for (int badWord = 0; badWord < badWords.length; badWord++) {
             if (userInput.contains(badWords[badWord])) {
                 happiness -= 10;
+                containsBad = true;
             }
             if(userInput.contains(goodWords[badWord])) {
                 happiness += 10;
             }
         }
-        if (userInput.contains("?")) {
-        String[] questionAnswer = {"Dunno","You`re always right", "Not really", "No pain, no gain", "I donn`t really know",
+        if (userInput.contains("?") && !containsBad) {
+            String[] questionAnswer = {"Dunno","You`re always right", "Not really", "No pain, no gain", "I donn`t really know",
                 "Next time I will have an answer", "I guess so...","Yes, yes :)", "Sure", "Alright", "Yea", "Maybe" ,
                 "Maybe yes, maybe no","Yes","Yes, yes, yes!", "No", "Brrr","Chills"};
         System.out.println(questionAnswer[randomizer(0,17)]);
-        }else{
-        String[] answer = {"OK", "Got it", "Interesting", "I loved that one :)", "You're funny", "Maker is always like that(not really) ;)",
+        }else if(!containsBad){
+            String[] answer = {"OK", "Got it", "Interesting", "I loved that one :)", "You're funny", "Maker is always like that(not really) ;)",
                 "Not anymore", "So-so", "Keep it up", "Agreed", "Not really", "Good point", "I am the law, just so you know","Never settle"};
         System.out.println(answer[randomizer(0,12)]);
+        }else{
+            String[] meh = {"Meh", "Bruh", "Why?", "No way!", "****"};
+            System.out.println(meh[randomizer(0,4)]);
         }
         if (phrases == 3) {
             phrases = 0;
@@ -127,7 +132,7 @@ public class Friend {
                 "I hear they're calling for thunderstorms all weekend", "We couldn't ask for a nicer day, could we?",
                 "How about this weather?", "Did you order this sunshine?", "Did you catch the news today?",
                 "Do you have somebody?", "What do you think about this transit strike?",
-                "I read in the paper today that the T1 Mall is closing.",
+                "I read in the paper today that 'winter is coming'.",
                 "I heard on the radio today that they are finally going to start building the new bridge.",
                 "How about those Narva-Trans? Do you think they're going to win anytime soon?",
                 "How do you do?", "Have you ever tried the cabbage rolls?",
@@ -141,10 +146,10 @@ public class Friend {
         // Mb add a method that checks if prog already printed something from the list
         System.out.println(commonPhrases[randomizer(0,24)]);
         String[] extraTopic = {"We can also discuss something else if you want ;)", "If it is ok to discuss that...",
-                "Or you have another topic?","I hope you`re cool with that"," That should be a good topic)",
+                "Or you have another topic?","I hope you`re cool with that", "That should be a good topic)",
                 "I hope you`re interested","Intriguing isn`t it(you don`t have to answer)?",
                 "Any literature theme to discuss? I like Love, good versus evil, mortality. Xe-xe","BRB"};
-        String extraRandom = extraTopic[randomizer(0,9)];
+        String extraRandom = extraTopic[randomizer(0,8)];
         System.out.println(extraRandom);
         if (extraRandom.equals("BRB")){
             System.out.println("*A few moments later*");
