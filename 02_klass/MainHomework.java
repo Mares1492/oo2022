@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+//Smalltalk bot, kinda
+
 public class MainHomework {
     public static void main(String[] args) {
         System.out.println("Hi! I am a Friend. Tell me your name: ");

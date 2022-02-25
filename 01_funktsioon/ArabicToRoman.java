@@ -1,5 +1,5 @@
 
-//Kodutöö |
+//Kodutöö | 18.02
 
 import java.util.Scanner;
 

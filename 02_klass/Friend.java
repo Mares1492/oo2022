@@ -58,7 +58,7 @@ public class Friend {
                 happiness += 10;
             }
         }
-        if (userInput.contains("?") && !containsBad) {
+        if (userInput.endsWith("?") && !containsBad) {
             String[] questionAnswer = {"Dunno","You`re always right", "Not really", "No pain, no gain", "I donn`t really know",
                 "Next time I will have an answer", "I guess so...","Yes, yes :)", "Sure", "Alright", "Yea", "Maybe" ,
                 "Maybe yes, maybe no","Yes","Yes, yes, yes!", "No", "Brrr","Chills"};
