@@ -1,5 +1,5 @@
 import java.io.*;
-
+//pooleli
 
 public class KirjalikKorrutamine {
     public static void main(String[] args) throws IOException {

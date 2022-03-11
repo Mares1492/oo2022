@@ -29,6 +29,7 @@ public class TripsTrapstTrull {
     }
     public static String game(){
         Scanner input = new Scanner(System.in);
+        System.out.println("First turn → Go Go X");
         int userX = 1;
         int userY = 1;
         for (int i = 0; i < 9; i++) {
@@ -48,23 +49,25 @@ public class TripsTrapstTrull {
 
             }
             if (i == 0 ||i == 2 || i == 4|| i == 6|| i == 8) {
-                field[userY][userX] = 'x';
+                System.out.println("O turn ↓");
+                field[userY][userX] = 'X';
             }else {
-                field[userY][userX] = 'o';
+                System.out.println("X turn ↓");
+                field[userY][userX] = 'O';
             }
             printField();
-            String winner = checkWinner();
-            if (winner.equals("x")){
-                return "X võitis";
-            }else if(winner.equals("o")){
-                return "Y võitis";
+            char winner = checkWinner();
+            if (winner == 'x'){
+                return "X has Won";
+            }else if(winner == 'o'){
+                return "Y has Won";
             }
 
         }
-        return "Draw";
+        return "Draw, Friendship won";
     }
 
-    public static String checkWinner(){
+    public static char checkWinner(){
         if(
             (field[0][0] == 'x' && field[0][2] == 'x' && field[0][4] == 'x') ||
             (field[2][0] == 'x' && field[2][2] == 'x' && field[2][4] == 'x') ||
@@ -74,7 +77,7 @@ public class TripsTrapstTrull {
             (field[0][4] == 'x' && field[2][4] == 'x' && field[4][4] == 'x') ||
             (field[0][0] == 'x' && field[2][2] == 'x' && field[4][4] == 'x') ||
             (field[4][4] == 'x' && field[2][2] == 'x' && field[4][0] == 'x')){
-            return "x";
+            return 'x';
         }else if(
                 (field[0][0] == 'o' && field[0][2] == 'o' && field[0][4] == 'o') ||
                 (field[2][0] == 'o' && field[2][2] == 'o' && field[2][4] == 'o') ||
@@ -84,10 +87,10 @@ public class TripsTrapstTrull {
                 (field[0][4] == 'o' && field[2][4] == 'o' && field[4][4] == 'o') ||
                 (field[0][0] == 'o' && field[2][2] == 'o' && field[4][4] == 'o') ||
                 (field[4][4] == 'o' && field[2][2] == 'o' && field[4][0] == 'o')){
-            return "o";
+            return 'o';
         }
         else {
-            return "";
+            return ' ';
         }
     }
 
