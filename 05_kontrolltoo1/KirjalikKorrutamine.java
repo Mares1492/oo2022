@@ -12,7 +12,7 @@ public class KirjalikKorrutamine {
         for (int i = 0; i < 2; i++) {
             IntNumbers[i] = Integer.parseInt(StrNumbers[i]);
         }
-       int answer = IntNumbers[0] * IntNumbers[1];
+        int answer = IntNumbers[0] * IntNumbers[1];
         System.out.println(IntNumbers[0] + " * " + IntNumbers[1] + " = " + answer);
 
     }
