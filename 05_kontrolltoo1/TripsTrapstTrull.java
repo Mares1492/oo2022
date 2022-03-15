@@ -69,24 +69,24 @@ public class TripsTrapstTrull {
 
     public static char checkWinner(){
         if(
-            (field[0][0] == 'x' && field[0][2] == 'x' && field[0][4] == 'x') ||
-            (field[2][0] == 'x' && field[2][2] == 'x' && field[2][4] == 'x') ||
-            (field[4][0] == 'x' && field[4][2] == 'x' && field[4][4] == 'x') ||
-            (field[0][0] == 'x' && field[2][0] == 'x' && field[4][0] == 'x') ||
-            (field[0][2] == 'x' && field[2][2] == 'x' && field[4][2] == 'x') ||
-            (field[0][4] == 'x' && field[2][4] == 'x' && field[4][4] == 'x') ||
-            (field[0][0] == 'x' && field[2][2] == 'x' && field[4][4] == 'x') ||
-            (field[4][4] == 'x' && field[2][2] == 'x' && field[4][0] == 'x')){
+            (field[0][0] == 'X' && field[0][2] == 'X' && field[0][4] == 'X') ||
+            (field[2][0] == 'X' && field[2][2] == 'X' && field[2][4] == 'X') ||
+            (field[4][0] == 'X' && field[4][2] == 'X' && field[4][4] == 'X') ||
+            (field[0][0] == 'X' && field[2][0] == 'X' && field[4][0] == 'X') ||
+            (field[0][2] == 'X' && field[2][2] == 'X' && field[4][2] == 'X') ||
+            (field[0][4] == 'X' && field[2][4] == 'X' && field[4][4] == 'X') ||
+            (field[0][0] == 'X' && field[2][2] == 'X' && field[4][4] == 'X') ||
+            (field[0][4] == 'X' && field[2][2] == 'X' && field[4][0] == 'X')){
             return 'x';
         }else if(
-                (field[0][0] == 'o' && field[0][2] == 'o' && field[0][4] == 'o') ||
-                (field[2][0] == 'o' && field[2][2] == 'o' && field[2][4] == 'o') ||
-                (field[4][0] == 'o' && field[4][2] == 'o' && field[4][4] == 'o') ||
-                (field[0][0] == 'o' && field[2][0] == 'o' && field[4][0] == 'o') ||
-                (field[0][2] == 'o' && field[2][2] == 'o' && field[4][2] == 'o') ||
-                (field[0][4] == 'o' && field[2][4] == 'o' && field[4][4] == 'o') ||
-                (field[0][0] == 'o' && field[2][2] == 'o' && field[4][4] == 'o') ||
-                (field[4][4] == 'o' && field[2][2] == 'o' && field[4][0] == 'o')){
+                (field[0][0] == 'O' && field[0][2] == 'O' && field[0][4] == 'O') ||
+                (field[2][0] == 'O' && field[2][2] == 'O' && field[2][4] == 'O') ||
+                (field[4][0] == 'O' && field[4][2] == 'O' && field[4][4] == 'O') ||
+                (field[0][0] == 'O' && field[2][0] == 'O' && field[4][0] == 'O') ||
+                (field[0][2] == 'O' && field[2][2] == 'O' && field[4][2] == 'O') ||
+                (field[0][4] == 'O' && field[2][4] == 'O' && field[4][4] == 'O') ||
+                (field[0][0] == 'O' && field[2][2] == 'O' && field[4][4] == 'O') ||
+                (field[4][4] == 'O' && field[2][2] == 'O' && field[4][0] == 'O')){
             return 'o';
         }
         else {
