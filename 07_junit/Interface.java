@@ -26,7 +26,7 @@ public interface Interface {
     default int chooseRandomGender(String name) {
         Scanner input = new Scanner(System.in);
         int randomGender = 5;
-        System.out.println("You`re about to change your gender of " + name);
+        System.out.println("You`re about to change gender of " + name);
         System.out.println("Choose if you want a random gender or not: ");
         System.out.println("0. I want to choose the new gender");
         System.out.println("1. I want to get a random gender ");

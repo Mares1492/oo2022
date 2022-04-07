@@ -1,4 +1,4 @@
-package class;
+package klass;
 
 public class Pig extends FarmAnimal {
 }
