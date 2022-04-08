@@ -23,7 +23,7 @@ public interface Interface {
         System.out.println("Variants for gender change: ");
         System.out.println(Arrays.toString(genderList.toArray()));
     }
-    default int chooseRandomGender(String name) {
+    default int chooseIfRandomGender(String name) {
         Scanner input = new Scanner(System.in);
         int randomGender = 5;
         System.out.println("You`re about to change gender of " + name);

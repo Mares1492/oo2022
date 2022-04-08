@@ -7,8 +7,8 @@ public class Main {
         Girl mary = new Girl("Mary");
         Boy john = new Boy("John");
 
-        mary.changeGender(mary.chooseRandomGender(mary.name));
-        john.changeGender(mary.chooseRandomGender(john.name));
+        mary.changeGender(mary.chooseIfRandomGender(mary.name));
+        john.changeGender(mary.chooseIfRandomGender(john.name));
     }
 
 

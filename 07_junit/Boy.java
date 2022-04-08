@@ -16,7 +16,7 @@ public class Boy extends Human {
                 gender = (Gender) genderList.toArray()[random()];
             }
         }else{
-            System.out.println("Choose gender from the list: ");
+            System.out.println("Choose gender from the list(using numbers): "); //Viga, kui kasutada stringi. Saab teha alternatiivi.
             printGenderList();
             Scanner input = new Scanner(System.in);
             int chosenGender = 8;
@@ -26,7 +26,7 @@ public class Boy extends Human {
             genderPicker(chosenGender);
         }
         if (gender == oldGender) {
-            System.out.println(name + " stays with his old: " + gender);
+            System.out.println(name + " stays with his old gender: " + gender);
         }else {
             System.out.println(name + " gets new gender: " + gender);
         }
