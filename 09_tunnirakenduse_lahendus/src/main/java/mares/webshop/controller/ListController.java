@@ -1,4 +1,4 @@
-package mares.webshop;
+package mares.webshop.controller;
 
 import org.springframework.web.bind.annotation.*;
 
@@ -31,7 +31,7 @@ public class ListController {
     public void addString(@RequestBody String string) {
         strings.add(string);
     }
-    @PutMapping("strings/{index}") //localhost:8080/strings/1
+    @PutMapping("strings/{index}") //localhost:8080/strings/1   POST
     public void editString(@PathVariable int index, @RequestBody String string) {
         strings.set(index,string);
     }
