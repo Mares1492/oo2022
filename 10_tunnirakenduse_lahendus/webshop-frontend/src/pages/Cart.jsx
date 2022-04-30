@@ -1,5 +1,6 @@
-function Home() {
-    return (<div>Cart</div>)
-}
 
-export default Home;
+
+function Cart() {
+    <div>Cart</div>
+}
+export default Cart;

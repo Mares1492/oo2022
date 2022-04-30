@@ -25,8 +25,9 @@ public class ProductController {
     }
 
     @DeleteMapping("products/{index}") // localhost:8080/products/1 DELETE
-    public void deleteProduct(@PathVariable Long index) {
+    public List<Product> deleteProduct(@PathVariable Long index) {
         productRepository.deleteById(index);
+        return productRepository.findAll();
     }
 
     @DeleteMapping("products")  // localhost:8080/products   DELETE
