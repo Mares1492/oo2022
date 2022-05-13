@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d19df221-5a6b-432c-81d4-51ce9341f59f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../09_tunnirakenduse_lahendus/src/main/java/mares/webshop/controller/FruitController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../09_tunnirakenduse_lahendus/src/main/java/mares/webshop/model/Fruits.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../11_proovikontrolltoo2/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../11_proovikontrolltoo2/.idea/11_proovikontrolltoo2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../11_proovikontrolltoo2/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../11_proovikontrolltoo2/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../11_proovikontrolltoo2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../11_proovikontrolltoo2/prooviKontroltoo/src/com/company/Hammasrattas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../11_proovikontrolltoo2/prooviKontroltoo/src/com/company/Pendel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09_tunnirakenduse_lahendus/src/main/java/mares/webshop/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../09_tunnirakenduse_lahendus/src/main/java/mares/webshop/controller/ProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webshop-frontend/src/pages/Add.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/webshop-frontend/src/pages/Add.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webshop-frontend/src/pages/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/webshop-frontend/src/pages/Cart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webshop-frontend/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/webshop-frontend/src/pages/Home.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webshop-frontend/src/pages/Maintain.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/webshop-frontend/src/pages/Maintain.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +28,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/mares/oo2022/10_tunnirakenduse_lahendus",
+    "last_opened_file_path": "D:/React-playground/Spot-the-Dark-Pattern-HiFi-React",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "editor.preferences.fonts.default",
     "vue.rearranger.settings.migration": "true"
@@ -68,7 +56,10 @@
       <workItem from="1650632991349" duration="169000" />
       <workItem from="1650717631907" duration="600000" />
       <workItem from="1651223653813" duration="48000" />
-      <workItem from="1651224357433" duration="5753000" />
+      <workItem from="1651224357433" duration="5755000" />
+      <workItem from="1651434648701" duration="2008000" />
+      <workItem from="1651486744086" duration="372000" />
+      <workItem from="1651494274193" duration="9535000" />
     </task>
     <servers />
   </component>
